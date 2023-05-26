@@ -1,0 +1,58 @@
+.intro {
+    height: 100vh;
+    background: linear-gradient(to top, rgba(51, 51, 51, 0.85), rgba(51, 51, 51, 0.85)), url(../img/intro-bg.jpg) no-repeat center / cover;
+    
+}
+
+.intro__container {
+    display: flex;
+    padding-top: 26.7rem;
+}
+.intro__block {
+    width: 54rem;
+    margin-right: 12.5rem;
+}
+.intro__title {
+    font-family: 'Open Sans Condensed' sans-serif;
+    font-weight: 600;
+    font-size: 6rem;
+}
+.intro__text {
+    margin: 5rem 0 5rem 0;
+    font-weight: 400;
+    font-size: 1.4rem;
+    line-height: 150%;
+}
+
+.slider {
+    
+}
+.slide {
+}
+.slide__img {
+}
+
+.intro__panel {
+    height: 100%;
+    width: 15rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: rgba(51, 51, 51, 0.75);
+}
+.panel__text {
+    display: flex;
+    margin-top: 38rem;
+    transform: rotate(-90deg);
+    font-family: 'Open Sans Condensed' sans-serif;
+    font-weight: 700;
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    color: #C4C4C4;
+}
+
+.panel__text span:first-child {
+    margin-right: 1rem;
+}
+.panel__social {
+}

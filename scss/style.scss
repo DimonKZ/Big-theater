@@ -1,23 +1,26 @@
+@font-face {
+	font-family: 'Open Sans Condensed';
+	src: url(../fonts/OpenSansCondensed-Bold.ttf) format('ttf');
+	font-weight: 600;
+}
+
+@font-face {
+	font-family: 'Open Sans Condensed';
+	src: url(../fonts/OpenSansCondensed-Light.ttf) format('ttf');
+	font-weight: 300;
+}
+
 *, h1, h2, h3, h4, h5  {
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
 }
 
-html,
-body {
+html, body {
 	font-size: 10px;
+	font-style: normal;
 	font-family: 'Open Sans', sans-serif;
 	color: #fff;
-}
-
-a {
-	text-decoration: none;
-}
-
-.container {
-	max-width: 114rem;
-	margin: 0 auto;
 }
 
 a {
@@ -28,3 +31,32 @@ li {
 	list-style: none;
 }
 
+.wrapper {
+	position: relative;
+}
+
+.container {
+	max-width: 114rem;
+	padding: 0 1.5rem 0 1.5rem;
+	margin: 0 auto;
+}
+
+.btn {
+	font-family: 'Open Sans Condensed' sans-serif;
+	font-weight: 600;
+	font-size: 1.8rem;
+	text-transform: uppercase;
+	padding: 1.5rem 4rem;
+	color: #fff;
+	background-color: #D1A954;
+	border: none;
+	cursor: pointer;
+	transition: all 0.7s;
+}
+
+.btn:hover {
+	background-color: #aa873a;
+}
+
+@import "_header.scss";
+@import "_intro.scss";
