@@ -29,10 +29,6 @@ li {
   list-style: none;
 }
 
-.wrapper {
-  position: relative;
-}
-
 .container {
   max-width: 114rem;
   padding: 0 1.5rem 0 1.5rem;
@@ -97,40 +93,158 @@ li {
   height: 100vh;
   background: linear-gradient(to top, rgba(51, 51, 51, 0.85), rgba(51, 51, 51, 0.85)), url(../img/intro-bg.jpg) no-repeat center/cover;
 }
-
-.intro__container {
+.intro .intro__container {
   display: flex;
   padding-top: 26.7rem;
 }
-
-.intro__block {
+.intro .intro__block {
   width: 54rem;
   margin-right: 12.5rem;
 }
-
-.intro__title {
+.intro .intro__title {
   font-family: "Open Sans Condensed" sans-serif;
   font-weight: 600;
   font-size: 6rem;
 }
-
-.intro__text {
+.intro .intro__text {
   margin: 5rem 0 5rem 0;
   font-weight: 400;
   font-size: 1.4rem;
   line-height: 150%;
 }
 
+.slider {
+  width: 37rem;
+  height: 51rem;
+  position: relative;
+  text-align: center;
+}
+.slider .slider__container {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+}
+.slider .slider__slide {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: all 0.7s;
+}
+.slider .slider__img {
+  background: linear-gradient(to top, rgba(209, 169, 84, 0.85), rgba(209, 169, 84, 0.85)), url(../img/header-slide-1.jpg) no-repeat center/cover;
+  width: 35rem;
+  height: 49rem;
+  position: relative;
+  top: 2rem;
+  left: 2rem;
+}
+.slider .slider__slide img {
+  width: 100%;
+  position: absolute;
+  top: -2rem;
+  left: -2rem;
+}
+.slider .slider__dots {
+  margin-top: 1.5rem;
+}
+.slider .slider__dot {
+  width: 1.5rem;
+  height: 1.5rem;
+  border-radius: 50%;
+  background-color: #fff;
+  border: none;
+  cursor: pointer;
+  opacity: 0.7;
+}
+.slider .slider__dot--active {
+  background-color: #D1A954;
+  opacity: 1;
+}
+.slider .slider__dot:not(:last-child) {
+  margin-right: 0.7rem;
+}
+.slider .slider__buttons {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  bottom: -7rem;
+}
+.slider .slider__button {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+.slider .slider__button:hover .slider__arrow {
+  background-color: #D1A954;
+}
+.slider .slider__button:hover .slider__arrow::after {
+  background-color: #D1A954;
+}
+.slider .slider__button:hover .slider__arrow::before {
+  background-color: #D1A954;
+}
+.slider .slider__button:hover .slider__text {
+  color: #D1A954;
+}
+.slider .slider__arrow {
+  width: 4rem;
+  height: 0.2rem;
+  background-color: #C4C4C4;
+  position: relative;
+  border-radius: 0.1rem 0 0 0.1rem;
+}
+.slider .slider__arrow::after {
+  content: "";
+  position: absolute;
+  width: 0.2rem;
+  height: 1.25rem;
+  top: -0.9rem;
+  left: 0.35rem;
+  background-color: #C4C4C4;
+  transform: rotate(45deg);
+  border-radius: 0.1rem;
+}
+.slider .slider__arrow::before {
+  content: "";
+  position: absolute;
+  width: 0.2rem;
+  height: 1.25rem;
+  bottom: -0.9rem;
+  left: 0.35rem;
+  background-color: #C4C4C4;
+  transform: rotate(-45deg);
+  border-radius: 0.1rem;
+}
+.slider .slider__arrow:first-child {
+  margin-right: 2.5rem;
+}
+.slider .slider__arrow:last-child {
+  margin-left: 2.5rem;
+  transform: rotateZ(180deg);
+}
+.slider .slider__text {
+  font-family: "Open Sans Condensed" sans-serif;
+  font-weight: 300;
+  font-size: 1.8rem;
+  text-transform: uppercase;
+  color: #C4C4C4;
+}
+
 .intro__panel {
+  display: flex;
+  flex-direction: column;
   height: 100%;
   width: 15rem;
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   background: rgba(51, 51, 51, 0.75);
 }
-
-.panel__text {
+.intro__panel .panel__text {
   display: flex;
   margin-top: 38rem;
   transform: rotate(-90deg);
@@ -139,8 +253,41 @@ li {
   font-size: 1.8rem;
   text-transform: uppercase;
   color: #C4C4C4;
+  position: relative;
+}
+.intro__panel .panel__text span:first-child {
+  margin-right: 1rem;
+}
+.intro__panel .panel__social {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20rem;
+}
+.intro__panel .social__link {
+  color: #C4C4C4;
+  font-size: 2rem;
+  transition: all 0.6s;
+}
+.intro__panel .social__link:not(:last-child) {
+  margin-bottom: 2rem;
+}
+.intro__panel .social__link:hover {
+  color: #D1A954;
+}
+.intro__panel .icon-vk {
+  font-size: 1.3rem;
+}
+.intro__panel .icon-youtube {
+  font-size: 1.3rem;
 }
 
-.panel__text span:first-child {
-  margin-right: 1rem;
+.intro__text::after {
+  content: "";
+  width: 0.3rem;
+  height: 8rem;
+  background-color: #C4C4C4;
+  position: absolute;
+  left: 7.5rem;
+  bottom: 37rem;
 }/*# sourceMappingURL=style.css.map */

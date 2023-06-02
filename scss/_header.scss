@@ -25,14 +25,14 @@
         transition: all 0.7s;
     }
     &__menu a:hover {
-        color: #D1A954;
-        text-shadow: 0px 0px 1rem #D1A954;
+        color: $color-gold;
+        text-shadow: 0px 0px 1rem $color-gold;
     }
     &__phone {
         padding-bottom: 0.5rem;
         font-weight: 700;
         font-size: 1.6rem;
         color: gold;
-        border-bottom: 0.2rem solid #D1A954;
+        border-bottom: 0.2rem solid $color-gold;
     }
 }
