@@ -111,6 +111,7 @@ li {
   font-weight: 400;
   font-size: 1.4rem;
   line-height: 150%;
+  position: relative;
 }
 
 .slider {
@@ -258,6 +259,15 @@ li {
 .intro__panel .panel__text span:first-child {
   margin-right: 1rem;
 }
+.intro__panel .panel__text::after {
+  content: "";
+  width: 8rem;
+  height: 0.3rem;
+  background-color: #C4C4C4;
+  position: absolute;
+  left: -10rem;
+  bottom: 1rem;
+}
 .intro__panel .panel__social {
   display: flex;
   flex-direction: column;
@@ -282,12 +292,30 @@ li {
   font-size: 1.3rem;
 }
 
-.intro__text::after {
-  content: "";
-  width: 0.3rem;
-  height: 8rem;
-  background-color: #C4C4C4;
-  position: absolute;
-  left: 7.5rem;
-  bottom: 37rem;
+@media screen and (max-width: 1550px) {
+  .intro .intro__container {
+    padding-top: 15rem;
+  }
+  .intro__block {
+    padding-top: 10rem;
+  }
+  .panel__text {
+    margin-top: 30em;
+  }
+  .intro .panel__text {
+    margin-top: 30rem;
+  }
+  .intro__text::after {
+    bottom: 26rem;
+  }
+}
+@media screen and (max-width: 1200px) {
+  html {
+    font-size: 9px;
+  }
+}
+@media screen and (max-width: 1075px) {
+  html {
+    font-size: 8px;
+  }
 }/*# sourceMappingURL=style.css.map */

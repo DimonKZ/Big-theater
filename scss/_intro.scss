@@ -23,7 +23,9 @@
         font-weight: 400;
         font-size: 1.4rem;
         line-height: 150%;
+        position: relative;
     }
+
 }
 
 .slider {
@@ -192,6 +194,16 @@
     .panel__text span:first-child {
         margin-right: 1rem;
     }
+
+    .panel__text::after {
+        content: "";
+        width: 8rem;
+        height: 0.3rem;
+        background-color: #C4C4C4;
+        position: absolute;
+        left: -10rem;
+        bottom: 1rem;
+    }
     
     .panel__social {
         display: flex;
@@ -223,13 +235,4 @@
     }
 }
 
-.intro__text::after {
-    content: "";
-    width: 0.3rem;
-    height: 8rem;
-    background-color: #C4C4C4;
-    position: absolute;
-    left: 7.5rem;
-    bottom: 37rem;
-}
 
