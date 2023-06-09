@@ -1,5 +1,22 @@
 'use strict';
 
+// =================BURGER MENU===================
+const introPanel = document.querySelector('.intro__panel');
+const burgerMenuCross = document.querySelector('.burger__menu--cross');
+const burgerMenu = document.querySelector('.burger__menu');
+
+const burgerMenuActive = function() {
+    burgerMenu.addEventListener('click', function() {
+        introPanel.classList.add('intro__panel--active');
+    });
+    
+    burgerMenuCross.addEventListener('click', function() {
+        introPanel.classList.remove('intro__panel--active');
+    });
+}
+
+burgerMenuActive();
+
 // =================SLIDER===================
 
 const slides = document.querySelectorAll('.slider__slide');

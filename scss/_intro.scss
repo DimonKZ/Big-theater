@@ -5,6 +5,8 @@
     .intro__container {
         display: flex;
         padding-top: 26.7rem;
+        position: relative;
+        z-index: 10;
     }
     
     .intro__block {
@@ -203,6 +205,10 @@
         position: absolute;
         left: -10rem;
         bottom: 1rem;
+    }
+
+    .panel__menu {
+        display: none;
     }
     
     .panel__social {

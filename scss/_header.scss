@@ -1,8 +1,8 @@
 .header {
-    & .container {
+    .container {
         position: relative;
     }
-    &__nav {
+    .header__nav {
         padding: 5rem 1.5rem 0 1.5rem;
         display: flex;
         justify-content: space-between;
@@ -11,28 +11,57 @@
         top: 0;
         left: 0;
     }
-    &__menu {
+    .header__menu {
         display: flex; 
         margin-right: 11rem; 
+        position: relative;
+        z-index: 20;
     }
-    &__menu li:not(:last-child) {
+    .header__menu li:not(:last-child) {
         margin-right: 5rem;
     }
-    &__menu a {
+    .header__menu a {
+        font-family: 'Open Sans Condensed' sans-serif;
         font-weight: 700;
         font-size: 1.8rem;
         color: #fff;
         transition: all 0.7s;
     }
-    &__menu a:hover {
+    .header__menu a:hover {
         color: $color-gold;
         text-shadow: 0px 0px 1rem $color-gold;
     }
-    &__phone {
+    .header__phone {
         padding-bottom: 0.5rem;
         font-weight: 700;
         font-size: 1.6rem;
         color: gold;
         border-bottom: 0.2rem solid $color-gold;
     }
+}
+
+.burger__menu {
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 4rem;
+    height: 4rem;
+    position: absolute;
+    left: 4rem;
+    top: 5rem;
+    z-index: 30;
+}
+
+.burger__menu span {
+    display: block;
+    height: 0.4rem;
+    background-color: #fff;
+}
+
+.burger__menu span:nth-child(2) {
+    width: 70%;
+}
+
+.burger__menu span:nth-child(3) {
+    width: 40%;
 }

@@ -9,9 +9,9 @@
 	src: url(../fonts/OpenSansCondensed-Light.ttf) format('ttf');
 	font-weight: 300;
 }
+
 $color-gold: #D1A954;
 $color-gray-dark: #333333;
-
 
 *, h1, h2, h3, h4, h5  {
 	margin: 0;
@@ -63,6 +63,7 @@ li {
 
 @import "_header.scss";
 @import "_intro.scss";
+@import "_about.scss";
 
 
 @import "_media.scss";
