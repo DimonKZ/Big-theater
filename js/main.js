@@ -2,8 +2,8 @@
 
 // =================BURGER MENU===================
 const introPanel = document.querySelector('.intro__panel');
-const burgerMenuCross = document.querySelector('.burger__menu--cross');
 const burgerMenu = document.querySelector('.burger__menu');
+const burgerMenuCross = document.querySelector('.burger__menu--cross');
 
 const burgerMenuActive = function() {
     burgerMenu.addEventListener('click', function() {
