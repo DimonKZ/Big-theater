@@ -52,6 +52,19 @@ li {
   background-color: #aa873a;
 }
 
+.section__title {
+  margin-bottom: 10rem;
+  font-family: "Open Sans Condensed" sans-serif;
+  font-weight: 300;
+  font-size: 4.8rem;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.section__title span {
+  color: #D1A954;
+}
+
 .header .container {
   position: relative;
 }
@@ -335,15 +348,6 @@ li {
   flex-direction: column;
   align-items: center;
 }
-.about .about__container .section__title {
-  font-family: "Open Sans Condensed" sans-serif;
-  font-weight: 300;
-  font-size: 4.8rem;
-  text-transform: uppercase;
-}
-.about .about__container .section__title span {
-  color: #D1A954;
-}
 .about .about__container .about__block {
   width: 100%;
   display: flex;
@@ -351,6 +355,66 @@ li {
 }
 .about .about__container .about__block .about__description {
   max-width: 44rem;
+}
+.about .about__container .about__block .about__description .about__text {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.4rem;
+  line-height: 150%;
+}
+.about .about__container .about__block .about__numbers .numbers__items .numbers__item {
+  margin-bottom: 1.5rem;
+}
+.about .about__container .about__block .about__numbers .numbers__items .numbers__item .numbers_img {
+  margin-bottom: 1.5rem;
+}
+.about .about__container .about__block .about__numbers .numbers__items .numbers__item .numbers__text {
+  font-family: "Open Sans Condensed";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1.6rem;
+}
+.about .about__container .about__block .about__numbers .numbers__items .numbers__item .numbers__text span {
+  color: #D1A954;
+  margin-right: 0.5rem;
+}
+.about .about__container .about__block .about__img img {
+  border-radius: 5%;
+}
+.about .about__container .about__block .about__img img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  transition: all 0.8s;
+}
+.about .about__container .about__block .about__img img:hover {
+  transform: scale(1.2);
+  border-radius: 10%;
+}
+.about .about__container .about__block .about__title {
+  text-transform: uppercase;
+  margin-bottom: 4rem;
+  font-family: "Open Sans Condensed";
+  font-weight: 700;
+  font-size: 2.1rem;
+}
+
+.productions {
+  background-color: #333333;
+}
+.productions .productions__gallery {
+  display: flex;
+  padding-left: 15rem;
+}
+.productions .productions__gallery .productions__item {
+  width: 25%;
+  min-height: 55rem;
+  background: linear-gradient(to top, rgba(51, 51, 51, 0.85), rgba(51, 51, 51, 0.85)), url(../img/productions-img_1.jpg) no-repeat center/cover;
+  transition: all 0.7s;
+}
+.productions .productions__gallery .productions__item:hover {
+  background: url(../img/productions-img_1.jpg) no-repeat center/cover;
 }
 
 @media screen and (max-width: 1550px) {

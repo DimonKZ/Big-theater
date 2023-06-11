@@ -28,8 +28,8 @@ let currentSlide = 0;
 const slidesNumber = slides.length;
 
 const moveToSlide = function(slide) {
-    slides.forEach((s, index) => {
-        s.style.transform = `translateX(${(index - slide) * 100}% )`;
+    slides.forEach((sld, index) => {
+        sld.style.transform = `translateX(${(index - slide) * 100}% )`;
     });
 }
 

@@ -1,0 +1,36 @@
+.productions {
+    background-color: $color-gray-dark;
+
+    .productions__body {
+
+    }
+
+    .productions__gallery {
+        display: flex;
+        padding-left: 15rem;
+
+        .productions__item {
+            width: 25%;
+            min-height: 55rem;
+            background: linear-gradient(to top, rgba(51, 51, 51, 0.85), rgba(51, 51, 51, 0.85)), url(../img/productions-img_1.jpg) no-repeat center / cover;
+            transition: all 0.7s;
+            
+            .productions__name {
+
+            }
+
+            .productions__date {
+                
+            }
+
+        }
+
+        .productions__item:hover {
+            background: url(../img/productions-img_1.jpg) no-repeat center / cover;
+        }
+    }
+}
+
+
+
+

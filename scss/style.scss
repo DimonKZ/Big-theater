@@ -61,9 +61,23 @@ li {
 	background-color: #aa873a;
 }
 
+.section__title {
+	margin-bottom: 10rem;
+	font-family: 'Open Sans Condensed' sans-serif;
+	font-weight: 300;
+	font-size: 4.8rem;
+	text-transform: uppercase;
+	text-align: center;
+}
+
+.section__title span {
+	color: $color-gold;
+}
+
 @import "_header.scss";
 @import "_intro.scss";
 @import "_about.scss";
+@import "_productions.scss";
 
 
 @import "_media.scss";
