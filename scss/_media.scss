@@ -21,6 +21,10 @@
 }
 
 @media screen and (max-width: 1440px) {
+    html {
+		font-size: 10px;
+	}
+    
     .intro__container {
         justify-content: space-between;
         padding: 0 7rem 0 7rem;
@@ -28,6 +32,14 @@
 
     .intro .intro__block {
         margin-right: 0;
+    }
+
+    .about  {
+        padding-left: 15rem;
+    }
+
+    .about .about__container .about__block .about__description  {
+        max-width: 40rem;
     }
     
 }
@@ -43,6 +55,10 @@
 
     .intro .intro__block {
         padding-left: 1rem;
+    }
+
+    .about .about__container .about__block .about__description  {
+        max-width: 38rem;
     }
 }
 
@@ -77,12 +93,29 @@
         padding-left: 15rem;
         padding-top: 21rem;
     }
+
+    .about .about__container .about__block {
+        justify-content: center;
+    }
+
+    .about .about__container .about__block .about__description {
+        margin-right: 3rem;
+    }
+
+    .about__img {
+        display: none;
+    }
 }
 
 @media screen and (max-width: 768px) {
     html {
 		font-size: 7px;
 	}
+
+    .container {
+        width: 100%;
+        overflow: hidden;
+    }
 
     .header .header__nav {
         padding: 0;
@@ -94,11 +127,12 @@
     }
 
     .header__nav .header__phone {
-
+        display: none;
     }
 
     .intro__panel {
         width: 35%;
+        height: 100%;
         padding: 14rem 0;
         justify-content: space-between;
         align-items: center;
@@ -212,6 +246,10 @@
 		font-size: 6px;
 	}
 
+    .about .about__container .about__block .about__title {
+        font-size: 3rem;
+    }
+
     .intro__container {
         padding-left: 5rem;
         padding-right: 5rem;
@@ -227,6 +265,37 @@
 
     .intro .intro__text {
         font-size: 2rem;
+    }
+
+    .about .about__container .about__block {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .about .about__container .about__block .about__description {
+        max-width: 100%;
+        text-align: center;
+    }
+
+    .about .about__container .about__block .about__description .about__text {
+        font-size: 2rem;
+    }
+
+    .about .about__numbers {
+        margin-top: 5rem;
+        text-align: center;
+    }
+
+    .about .numbers__items {
+        display: flex;
+    }
+
+    .about .numbers__item {
+        margin-right: 3rem;
+    }
+
+    .about .numbers_img {
+        display: flex;
     }
 }
 
