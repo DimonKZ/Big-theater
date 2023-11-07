@@ -1,0 +1,20 @@
+.partners {
+    padding-top: 15rem;
+    background-color: $color-gray-dark;
+
+    .partners__body {
+        display: flex;
+        flex-direction: column;
+
+        .partners__row {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .partners__row:not(:last-child) {
+            margin-bottom: 8rem;
+        }
+
+    }
+}
+

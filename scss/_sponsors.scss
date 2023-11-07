@@ -1,0 +1,101 @@
+.sponsors {
+    padding-top: 15rem;
+    padding-bottom: 8rem;
+    background-color: $color-gray-dark;
+
+    .sponsors__body {
+        display: flex;
+        flex-direction: column;
+
+        .sponsors__block {
+            display: flex;
+            justify-content: space-between;
+
+            .sponsors__info {
+                width: 55%;
+                margin-right: 12.5rem;
+                font-size: 1.6rem;
+            }
+
+            .sponsors__info p {
+                text-transform: uppercase;
+            }
+
+            .sponsors__info p:not(:last-child) {
+                margin-bottom: 2.5rem;
+            }
+            
+            .sponsors__form form {
+                display: flex;
+                flex-wrap: wrap;
+            }
+
+            .sponsors__col {
+                width: 30%;
+                // height: 10rem;
+            }
+            
+            .sponsors__form .sponsors__col:last-child {
+                display: flex;
+                justify-content: space-between;
+                margin-top: 4rem;
+                width: 100%;
+
+                .sponsors__text {
+                    max-width: 34rem;
+                    color: #989898;
+                    font-size: 1.2rem;
+                    font-family: 'Open Sans';
+                    line-height: 150%;
+                }
+            }
+
+            .sponsors__col:not(:last-child) input {
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-end;
+                width: 75%;
+                padding: 1rem;
+                font-family: 'Open Sans';
+                font-weight: 600;
+                font-size: 1.2rem;
+                color: #989898;
+                background-color: rgba(97, 97, 97, 1);
+                border: 1px solid rgb(151, 151, 151);
+                outline: none;
+            }
+
+            .sponsors__col:not(:last-child) input:not(:last-child) {
+                margin-bottom: 3rem;
+            }
+            
+            .sponsors__form textarea {
+                width: 40%;
+                height: 10rem;
+                padding: 1rem;
+                font-family: 'Open Sans';
+                font-weight: 600;
+                font-size: 1.2rem;
+                color: #989898;
+                background-color: rgba(97, 97, 97, 1);
+                border: 1px solid rgb(151, 151, 151);
+                outline: none;
+            }
+        }
+    }
+}
+
+
+.sponsors__phone {
+}
+.sponsors__email {
+}
+.sponsors__adress {
+}
+
+.sponsors__text {
+}
+.btn {
+}
+.sponsors__row {
+}

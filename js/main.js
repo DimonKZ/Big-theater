@@ -1,6 +1,9 @@
 'use strict';
 
-// =================BURGER MENU===================
+//=============================================================
+// =======================BURGER MENU==========================
+// ============================================================
+
 const introPanel = document.querySelector('.intro__panel');
 const burgerMenu = document.querySelector('.burger__menu');
 const burgerMenuCross = document.querySelector('.burger__menu--cross');
@@ -17,7 +20,9 @@ const burgerMenuActive = function() {
 
 burgerMenuActive();
 
-// =================SLIDER===================
+//=============================================================
+// =======================SLIDER==========================
+// ============================================================
 
 const slides = document.querySelectorAll('.slider__slide');
 const btnRight = document.querySelector('.slider__button--right');
@@ -88,5 +93,29 @@ dotContainer.addEventListener('click', function(e) {
         const slide = e.target.dataset.slide;
         moveToSlide(slide);
         activateCurrentDot(slide);
+    }
+});
+
+//=============================================================
+// =====================Productions gallery====================
+// ============================================================
+
+const prodItem = document.querySelectorAll('.productions__item');
+const prodGallery = document.querySelector('.productions__gallery');
+
+prodGallery.addEventListener('click', function(e) {
+    if(e.target.closest('.productions__item')) {
+        const clickedItem = e.target.closest('.productions__item');
+        
+        prodItem.forEach(item => item.classList.remove('scale-zoom'));
+        // clickedItem.classList.add('scale-normal');
+        clickedItem.classList.toggle('scale-zoom');
+        if(clickedItem.classList.contains('scale-zoom')) {
+            document.querySelectorAll('.productions__content').style.display = 'none';
+            document.querySelector('.productions__element').style.display = 'none';
+        } else {
+            document.querySelectorAll('.productions__content').style.display = 'block';
+            document.querySelector('.productions__element').style.display = 'flex';
+        }
     }
 });

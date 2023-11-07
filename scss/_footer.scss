@@ -1,0 +1,17 @@
+.footer {
+    background-color: $color-gray-dark;
+
+    .footer__body {
+        display: flex;
+        justify-content: space-between;
+        border-top: 0.1rem solid #565656;
+        padding: 3rem 0 3rem 0;
+
+        .footer__text {
+            font-size: 1.2rem;
+            font-family: 'Open Sans';
+        }
+    }
+}
+
+

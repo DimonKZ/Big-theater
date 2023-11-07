@@ -12,25 +12,87 @@
         .productions__item {
             width: 25%;
             min-height: 55rem;
-            background: linear-gradient(to top, rgba(51, 51, 51, 0.85), rgba(51, 51, 51, 0.85)), url(../img/productions-img_1.jpg) no-repeat center / cover;
-            transition: all 0.7s;
+            position: relative;
+            transition: all 0.6s;
+
+            .productions__photo {
+                width: 100%;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                z-index: 10;
+                object-fit: cover;
+            }
+
+            .productions__content {
+                padding: 4rem;
+                position: relative;
+                width: 100%;
+                height: 100%;
+                z-index: 20;
+                background-color: rgba(51, 51, 51, 0.85);
+                overflow: hidden;
+                transition: all 0.4s;
+                opacity: 1;
+
+                .productions__name {
+                    font-family: 'Open Sans Condensed' sans-serif;
+                    font-weight: 700;
+                    font-size: 2.4rem;
+                    text-transform: uppercase;
+                }
+    
+                .productions__date {
+                    font-family: 'Open Sans Condensed' sans-serif;
+                    font-weight: 700;
+                    font-size: 1.8rem;
+                    text-transform: uppercase;
+                    transform: rotate(-90deg);
+                    position: absolute;
+                    left: -2rem;
+                    bottom: 10rem;
+                }
+            }
             
-            .productions__name {
-
-            }
-
-            .productions__date {
-                
+            .productions__element {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 10rem;
+                height: 10rem;
+                background-color: $color-gold;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                border-radius: 50%;
+                z-index: 30;
+                opacity: 0;
+                transition: opacity 0.6s;
+                cursor: pointer;
             }
 
         }
 
-        .productions__item:hover {
-            background: url(../img/productions-img_1.jpg) no-repeat center / cover;
+        .productions__item:hover .productions__content{
+            opacity: 0;
         }
+
+        .productions__item:hover .productions__element{
+            opacity: 1;
+        }
+
+        // .productions__item:hover {
+        //     transform: scale(1.2);
+        //     z-index: 40;
+        // }
     }
 }
 
-
+.scale-zoom {
+	transform: scale(1.2);
+	z-index: 40;
+}
 
 
